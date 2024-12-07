@@ -4,7 +4,8 @@ import HeroSection from "../miniComponents/HeroSection";
 import TrendingBlogs from "../miniComponents/TrendingBlogs";
 import PopularAuthors from "../miniComponents/PopularAuthors";
 import { Context } from "../../main";
-import FacebookMsg from "../miniComponents/FacebookMsg";
+
+
 
 const Home = () => {
   const { mode, blogs } = useContext(Context);
@@ -16,7 +17,8 @@ const Home = () => {
       <TrendingBlogs />
       <LatestBlogs heading={"Latest Blogs"} blogs={filteredBlogs} />
       <PopularAuthors />
-      <FacebookMsg />
+      
+ 
     </article>
   );
 };

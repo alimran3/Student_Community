@@ -15,7 +15,8 @@ import AllAuthors from "./components/pages/AllAuthors";
 import { Context } from "./main";
 import axios from "axios";
 import UpdateBlog from "./components/pages/UpdateBlog";
-import FacebookMsg from "./components/miniComponents/FacebookMsg";
+import { FacebookMsg } from "./components/miniComponents/FacebookMsg";
+
 
 const App = () => {
   const { setUser, isAuthenticated, setIsAuthenticated, user, setBlogs } =
@@ -66,7 +67,7 @@ const App = () => {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/blog/update/:id" element={<UpdateBlog />} />
         </Routes>
-        
+        <FacebookMsg/>
         <Footer />
         <Toaster />
       </BrowserRouter>
